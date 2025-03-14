@@ -1,4 +1,4 @@
-# parallel-programming-peoject
+# parallel-programming-project
  parallel-programming-peoject using java
 Spring Batch ETL (Extract, Transform, Load) with Parallel Processing
 
