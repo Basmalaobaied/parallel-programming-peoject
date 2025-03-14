@@ -6,18 +6,18 @@ Overview
 
 The Spring Batch ETL project is a robust solution for efficiently processing and transforming large-scale data within a Spring Boot environment. It leverages Spring Batch to perform Extract, Transform, and Load (ETL) operations on data from a MySQL database.
 
-🚀 This project has been enhanced with Parallel Processing using Partitioning, allowing data to be processed simultaneously across multiple threads, significantly improving performance.
+This project has been enhanced with Parallel Processing using Partitioning, allowing data to be processed simultaneously across multiple threads, significantly improving performance.
 
 ⸻
 
 Key Features
 
-✅ Parallel Processing using Partitioning for improved performance
-✅ Extract data from MySQL using JdbcPagingItemReader
-✅ Transform data with a custom ItemProcessor
-✅ Load transformed data into a new table using JdbcBatchItemWriter
-✅ Manage multiple tasks efficiently with Spring Batch & Spring Boot
-✅ Send notifications when the batch job completes using JobCompletionNotificationListener
+- Parallel Processing using Partitioning for improved performance
+- Extract data from MySQL using JdbcPagingItemReader
+-Transform data with a custom ItemProcessor
+  - Load transformed data into a new table using JdbcBatchItemWriter
+- Manage multiple tasks efficiently with Spring Batch & Spring Boot
+  -Send notifications when the batch job completes using JobCompletionNotificationListener
 
 ⸻
 
@@ -61,7 +61,7 @@ How it Works (Parallel Execution Flow)
 4️⃣ Job Completion Notification: Once all partitions are processed, a notification is sent.
 Performance Improvements with Parallel Processing
 
-🚀 Before Optimization: Data processing was sequential, leading to slower execution when handling large datasets.
+ Before Optimization: Data processing was sequential, leading to slower execution when handling large datasets.
 ⚡ After Optimization: Implemented Parallel Processing with Partitioning, allowing multiple threads to process data simultaneously, improving execution time by 70-80%.
 
 ⸻
