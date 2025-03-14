@@ -55,14 +55,14 @@ Project Structure
 
 How it Works (Parallel Execution Flow)
 
-1️⃣ Partitioning: The User table data is split into multiple partitions using ColumnRangePartitioner.
-2️⃣ Multi-threaded processing: Multiple threads are created, and each thread processes a partition independently.
-3️⃣ Parallel Steps: Each thread executes a Step that reads, processes, and writes data concurrently.
-4️⃣ Job Completion Notification: Once all partitions are processed, a notification is sent.
+1️-Partitioning: The User table data is split into multiple partitions using ColumnRangePartitioner.
+2️-Multi-threaded processing: Multiple threads are created, and each thread processes a partition independently.
+3️- Parallel Steps: Each thread executes a Step that reads, processes, and writes data concurrently.
+4️- Job Completion Notification: Once all partitions are processed, a notification is sent.
 Performance Improvements with Parallel Processing
 
  Before Optimization: Data processing was sequential, leading to slower execution when handling large datasets.
-⚡ After Optimization: Implemented Parallel Processing with Partitioning, allowing multiple threads to process data simultaneously, improving execution time by 70-80%.
+ After Optimization: Implemented Parallel Processing with Partitioning, allowing multiple threads to process data simultaneously, improving execution time by 70-80%.
 
 ⸻
 
